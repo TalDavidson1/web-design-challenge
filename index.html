@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us"> 
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Study and Results</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <style>
+    body{
+    background-image: url("Visuals/sky-view.png")
+    }
+  </style>
+</head>
+
+<body background= "Visual/cloud-bg.png">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Weather Visualized</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="clouds.html">Latitude vs Clouds</a>
+            <a class="dropdown-item" href="humidity.html">Latitude vs Humidity</a>
+            <a class="dropdown-item" href="temperature.html">Latitude vs Temperature</a>
+            <a class="dropdown-item" href="windspeed.html">Latitude vs Windspeed</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <br>
+    <br>
+        
+    <div class="row">
+        <div class="col">
+            <div class="card" style="float: left; width: 48rem;">
+                <div class="card-body">
+                <h5 class="card-title">Weather vs Distance to the Equator: A Summary</h5>
+                <img src="Visuals/equatorsign.png" style="float:left;width:180px;height:111px;padding:10px 10px 10px 10px;"></img>
+                <p class="card-text">For this project, I utilized APIs to gather data regarding weather. With this data, I used Matplotlib to generate visualisations to display the differences caused by distance to the equator.</p>
+                <p class="card-text">Not only images will be supplied through these pages. Summaries, analysis, and the general findings of the project are here for you to explore. These findings were based on factors such as: latitude, longitude, humidity, wind speed, and cloudiness. Come and explore the data with me.</p>
+                </div>
+            </div>
+        <div class="col">
+            <div class="card" style="float: right; width: 30rem;">
+            <center><a href="clouds.html"><img src="Visuals/lat_vs_clouds.png" width="400px"></img></a></center>
+            <center><a href="humidity.html"><img src="Visuals/lat_vs_humidity.png" width="400px"></img></a></center>
+            <center><a href="temperature.html"><img src="Visuals/lat_vs_temp.png" width="400px"></img></a></center>
+            <center><a href="windspeed.html"><img src="Visuals/lat_vs_wind.png"width="400px"></img></a></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    

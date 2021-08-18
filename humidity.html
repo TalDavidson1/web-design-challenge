@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us"> 
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Study and Results: Humidity</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <style>
+    body{
+    background-image: url("Visuals/sky-view.png")
+    }
+  </style>
+</head>
+
+<body background= "Visual/cloud-bg.png">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Weather Visualized</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="comparisons.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="clouds.html">Latitude vs Clouds</a>
+            <a class="dropdown-item" href="humidity.html">Latitude vs Humidity</a>
+            <a class="dropdown-item" href="temperature.html">Latitude vs Temperature</a>
+            <a class="dropdown-item" href="windspeed.html">Latitude vs Windspeed</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <br>
+    <br>
+
+ <div class="row">
+        <div class="col">
+            <div class="card" style="float: left; width: 48rem;">
+                <div class="card-body">
+                <center><h5 class="card-title">Latitude vs. Humidity</h5>
+                <img src="Visuals/lat_vs_humidity.png"></img>
+                <p class="card-text">Humidity impacts all levels of latitude, as can be seen by the visual above. Overall, most of the latitudes experience higher levels of humidity, however the latitudes with the greatest ranges of humidity are 10 to 40. The ones experiencing the least amounts of humidity are close to the global poles, around -60 and 80.</p></center>
+                </div>
+            </div>
+        <div class="col">
+            <div class="card" style="float: right; width: 30rem;">
+            <center><a href="humidity.html"><img src="Visuals/lat_vs_clouds.png" width="400px"></img></a></center>
+            <center><a href="temperature.html"><img src="Visuals/lat_vs_temp.png" width="400px"></img></a></center>
+            <center><a href="windspeed.html"><img src="Visuals/lat_vs_wind.png"width="400px"></img></a></center>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
